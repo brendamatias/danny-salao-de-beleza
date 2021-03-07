@@ -75,4 +75,47 @@ export const Container = styled.footer`
       margin-bottom: 12px;
     }
   }
+
+  @media (max-width: 500px) { 
+    .footer-top {
+      flex-direction: column;
+      padding: 40px 30px;
+
+      .img   {
+        margin: 0 auto;
+      }
+    
+      ul {
+        flex-direction: column;
+
+        li {
+          flex-direction: column;
+        }
+
+        li:not(:last-child) {
+          margin: 0 0 40px 0;
+        }
+
+        li:first-child {
+          margin-top: 40px;
+        }
+
+        strong {
+          display: block;
+        }
+
+        hr {
+          width: 100%;
+        }
+      }
+    }
+
+    .footer-bottom {
+      span {
+        display: block;
+        width: 240px;
+        margin: 0 auto;
+      }
+    }
+  }
 `;

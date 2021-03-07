@@ -30,7 +30,7 @@ export default function Location() {
       </div>
       <DivImage> 
         <Image
-          src="/assets/home-bg.png"
+          src="/assets/salao-de-beleza.jpg"
           alt="Introdução"
           width={400}
           height={450}

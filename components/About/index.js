@@ -29,7 +29,7 @@ export default function About() {
       </div>
       <DivImage> 
         <Image
-          src="/assets/home-bg.png"
+          src="/assets/about-image.jpg"
           alt="Introdução"
           width={400}
           height={450}

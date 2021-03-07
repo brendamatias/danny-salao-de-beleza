@@ -16,7 +16,7 @@ export default function Services() {
     >
       <DivImage> 
         <Image
-          src="/assets/home-bg.png"
+          src="/assets/servicos-image.jpg"
           alt="Introdução"
           width={400}
           height={450}
@@ -28,7 +28,6 @@ export default function Services() {
             alt="Introdução"
             width={108}
             height={108}
-            
           />
         </div>
       </DivImage>

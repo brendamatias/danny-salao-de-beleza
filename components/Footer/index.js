@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <Container>
       <div className="footer-top">
-        <div>
+        <div className="img">
           <Image
             src="/assets/logo-white.svg"
             alt="Introdução"
