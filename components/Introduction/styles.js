@@ -57,14 +57,6 @@ export const IntroductionContent = styled.div`
     flex-direction: column;
     height: 100%;
 
-    header {
-      display: none;
-    }
-
-    img {
-      display: none;
-    }
-
     > div {
       padding: 60px 25px;
 
