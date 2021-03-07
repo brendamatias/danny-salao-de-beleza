@@ -66,4 +66,21 @@ export const Container = styled.div`
       }
     }
   }
+
+  @media (max-width: 500px) { 
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px 0 10px;
+
+    ul {
+      padding: 0 15px 60px 15px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 16px;
+
+      p {
+        max-width: 100%;
+      }
+    }
+  }
 `;

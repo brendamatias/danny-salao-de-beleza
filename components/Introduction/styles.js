@@ -51,4 +51,32 @@ export const IntroductionContent = styled.div`
       }
     }
   }
+
+  @media (max-width: 500px) { 
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    header {
+      display: none;
+    }
+
+    img {
+      display: none;
+    }
+
+    > div {
+      padding: 60px 25px;
+
+      > div {
+        position: static;
+        margin-top: 0;
+        max-width: 100%;
+
+        strong {
+          font-size: 36px;
+        }
+      }
+    }
+  }
 `;

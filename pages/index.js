@@ -11,11 +11,11 @@ export default function Home() {
   return (
     <> 
       <GlobalStyle />
-      {/* <Introduction />
+      <Introduction />
       <About />
       <Services />
       <Location />
-      <Feedbacks /> */}
+      <Feedbacks />
       <Footer />
     </>
   )

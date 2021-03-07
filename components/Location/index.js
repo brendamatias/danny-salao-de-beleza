@@ -13,7 +13,8 @@ export default function Location() {
       buttonColor={'#F6EEEB'} 
       titleColor={'#010101'}
       contentColor={'#7A7A7A'}
-      padding={'180px 10%'}
+      padding={'100px 10% 180px 10%'}
+      paddingMobile={'34px 25px 160px 25px'}
     >
       <div>
         <strong>Visite nosso Salão</strong>

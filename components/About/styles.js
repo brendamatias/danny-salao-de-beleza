@@ -41,4 +41,30 @@ export const DivImage = styled.div`
     left: 50px;
     z-index: 3;
   }
+
+  @media (max-width: 500px) { 
+    .circles {
+      top: -14px;
+      right: -14px;
+
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    &:before {
+      height: 70px;
+      width: 70px;
+      bottom: -15px;
+      left: -15px;
+    }
+      
+    &:after {
+      height: 30px;
+      width: 30px;
+      bottom: 0;
+      left: 40px;
+    }
+  }
 `;

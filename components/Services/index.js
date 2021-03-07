@@ -13,6 +13,7 @@ export default function Services() {
       buttonColor={'#F6EEEB'} 
       titleColor={'#010101'}
       contentColor={'#7A7A7A'}
+      paddingMobile={'60px 25px 0 25px'}
     >
       <DivImage> 
         <Image

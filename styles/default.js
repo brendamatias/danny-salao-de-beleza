@@ -41,4 +41,21 @@ export const Container = styled.div`
       }
     }
   }
+  
+  @media (max-width: 500px) { 
+    flex-direction: column;
+    padding: ${props => props.paddingMobile ? props.paddingMobile : '34px 25px 60px 25px'};
+
+    > div {
+      max-width: 100%;
+
+      button {
+        margin: 10px 0 60px 0;
+      }
+      
+      strong {
+        margin: 26px 0;
+      }
+    }
+  }
 `;
