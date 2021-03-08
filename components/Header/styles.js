@@ -77,7 +77,7 @@ export const Content = styled.header`
       opacity: 1;
       transition: all 0.5s ease;
       z-index: 10;
-      /* align-content: center; */
+      box-shadow: 0 0 0.7em #888888;
     }
 
     .header-links li {

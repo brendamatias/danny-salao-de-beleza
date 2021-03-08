@@ -6,7 +6,7 @@ import { IntroductionContent } from './styles';
 
 export default function Introduction() {
   return (
-    <IntroductionContent>
+    <IntroductionContent id="introduction">
       <Image
         src="/assets/home-bg.png"
         alt="Introdução"

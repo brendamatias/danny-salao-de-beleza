@@ -7,6 +7,7 @@ import { DivImage } from './styles';
 export default function Services() {
   return (
     <Container 
+      id="services"
       bg={'#F6EEEB'} 
       buttonBg={'#E77A66'} 
       buttonColor={'#F6EEEB'} 

@@ -1,13 +1,17 @@
+import Link from "next/link";
+import { useRouter } from "next/router";
 import { useState, useEffect } from 'react';
 import { Content } from './styles';
 import { IoLogoFacebook, IoLogoInstagram, IoClose, IoMenu } from 'react-icons/io5';
 
 export default function Header() {
+  const router = useRouter();
+
   const [click, setClick] = useState(false);
   const [scroll, setScroll] = useState(false);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-    
+
   const handleScroll = () => {
     if (window.scrollY > 0 && !scroll) {
       setScroll(true)
@@ -19,27 +23,37 @@ export default function Header() {
   }
 
   useEffect(() => {
-      window.addEventListener('scroll', handleScroll);
-      return () => window.removeEventListener('scroll', handleScroll);
-    });
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
 
   return (
     <Content>
       <ul className={click ? "header-links header-active" : "header-links"}>
-        <li onClick={closeMobileMenu}>
-          <a href="#introduction">Início</a>
+        <li className={router.asPath === "/#introduction" ? "link-active" : ""} onClick={closeMobileMenu}>
+          <Link href="#introduction">
+            Início
+          </Link>
         </li>
-        <li onClick={closeMobileMenu}>
-          <a href="#about">Sobre</a>
+        <li className={router.asPath === "/#about" ? "link-active" : ""} onClick={closeMobileMenu}>
+          <Link href="#about">
+            Sobre
+          </Link>
         </li>
-        <li onClick={closeMobileMenu}>
-          <a href="#services">Serviços</a>
+        <li className={router.asPath === "/#services" ? "link-active" : ""}  onClick={closeMobileMenu}>
+          <Link href="#services">
+            Serviços
+          </Link>
         </li>
-        <li onClick={closeMobileMenu}>
-          <a href="#location">Localização</a>
+        <li className={router.asPath === "/#location" ? "link-active" : ""}  onClick={closeMobileMenu}>
+          <Link href="#location">
+            Localização
+          </Link>
         </li>
-        <li onClick={closeMobileMenu}>
-          <a href="#contact">Contato</a>
+        <li className={router.asPath === "/#contact" ? "link-active" : ""}  onClick={closeMobileMenu}>
+          <Link href="#contact">
+            Contato
+          </Link>
         </li>
       </ul>
 

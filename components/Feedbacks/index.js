@@ -5,7 +5,7 @@ import { Container } from './styles';
 
 export default function Feedbacks() {
   return (
-    <Container>
+    <Container id="feedbacks">
       <div>
         <Image
           src="/assets/feedbacks-imgs.png"

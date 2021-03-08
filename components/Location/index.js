@@ -7,6 +7,7 @@ import { DivImage } from './styles';
 export default function Location() {
   return (
     <Container 
+      id="location"
       bg={'#FDE4DB'} 
       buttonBg={'#E77A66'} 
       buttonColor={'#F6EEEB'} 

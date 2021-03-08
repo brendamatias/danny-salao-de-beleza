@@ -6,7 +6,8 @@ import { DivImage } from './styles';
 
 export default function About() {
   return (
-    <Container 
+    <Container
+      id="about" 
       bg={'#E77A66'} 
       buttonBg={'#F6EEEB'} 
       buttonColor={'#E77A66'} 
